@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BIET HUB - Login</title>
+    <style>
+      /* ----- Global Reset (optional) ----- */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background-color: #fdf7ff; /* Light background tint */
+      }
+
+      /* ----- Container Setup ----- */
+      .container {
+        display: flex;
+        flex-direction: row;
+        min-height: 100vh;
+        width: 100%;
+      }
+
+      /* ----- Left Panel ----- */
+      .left-panel {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        background-color: #f7f7f7; /* Matches body or use a slight variation */
+      }
+
+      .left-panel .login-image {
+        max-width: 70%;
+        height: auto;
+        margin-bottom: 2rem;
+      }
+
+      .left-panel h1 {
+        font-size: 2rem;
+        color: ##f7f7f7; /* Main brand color */
+        margin-bottom: 1rem;
+      }
+
+      .left-panel p {
+        font-size: 1rem;
+        color: #333;
+      }
+
+      /* ----- Right Panel ----- */
+      .right-panel {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 2rem;
+      }
+
+      .form-container {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .form-container h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 1.5rem;
+      }
+
+      /* ----- Google Button ----- */
+      .google-btn {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        color: #333;
+        padding: 0.75rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-bottom: 1.5rem;
+      }
+      .google-btn:hover {
+        background-color: #f5f5f5;
+      }
+
+      /* ----- Form Fields ----- */
+      .form-container label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .form-container input {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      .form-links {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+      }
+
+      .form-links a {
+        color: #6f3ee7;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      /* ----- Login Button ----- */
+      .login-btn {
+        width: 100%;
+        background-color: #6f3ee7;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 0.75rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-bottom: 1rem;
+      }
+      .login-btn:hover {
+        background-color: #5a2dc2;
+      }
+
+      /* ----- Register Link ----- */
+      .register-link {
+        text-align: center;
+        font-size: 0.95rem;
+        color: #333;
+      }
+      .register-link a {
+        color: #6f3ee7;
+        text-decoration: none;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Left Panel -->
+      <div class="left-panel">
+        <!-- Replace "images/character.png" with the correct path to your image -->
+        <img
+          src="WhatsApp Image 2025-02-11 at 21.28.18_e2d8e1b0.jpg"
+          alt="Character Image"
+          class="login-image"
+        />
+        <h1>BIET HUB</h1>
+        <p>BRINGING CLUBS, COUNCILS, AND EVENTS TOGETHER</p>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="right-panel">
+        <div class="form-container">
+          <div>
+            <img
+              src="WhatsApp Image 2025-02-08 at 12.10.23_782f8e8e.jpg"
+              width="150px"
+            />
+          </div>
+          <h2>Login to your Account</h2>
+
+          <!-- Google Login Button -->
+          <button class="google-btn">
+            <!-- If you have a Google icon, you can place an <img> tag here -->
+            Continue with Google
+          </button>
+
+          <!-- Login Form -->
+          <form>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+
+            <div class="form-links">
+              <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+          </form>
+
+          <p class="register-link">
+            Not Registered Yet? <a href="#">Create an account</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
